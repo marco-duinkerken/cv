@@ -1,0 +1,20 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "Ubuntu-based LaTeX Environment",
+  "build": {
+    "args": {
+      // Use this to set any build arguments for Dockerfile. Not needed for default image.
+    }
+  },
+  "settings": {
+    // Put VS Code settings here (optional)
+  },
+  "extensions": [
+    // List of VS Code extension IDs to install (optional)
+  ],
+  "forwardPorts": [
+    // List of ports to forward (optional)
+  ],
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y git texlive texlive-luatex texlive-fonts-extra",
+  "remoteUser": "root"
+}
