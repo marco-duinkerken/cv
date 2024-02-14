@@ -18,7 +18,7 @@ jobs:
         id: cv_release
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: "maxpowis/cv"
+          repository: "marco-duinkerken/cv"
           type: "latest"
       - name: Echo release tag name
         run: echo "::debug::Found tag for latest release >> ${{ steps.cv_release.outputs.release }}"
@@ -26,7 +26,7 @@ jobs:
         uses: Legion2/download-release-action@v2.1.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: "maxpowis/cv"
+          repository: "marco-duinkerken/cv"
           tag: ${{ steps.cv_release.outputs.release }}
           file: cv.pdf
       - name: Convert pdf to png (ImageMagick)
@@ -47,8 +47,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.PERSONAL_TOKEN_REPO_WORKFLOW }}
         with:
           source_folder: 'cv'
-          destination_repo: 'maxpowis/maxpowis.github.io'
+          destination_repo: 'marco-duinkerken/marco-duinkerken.github.io'
           destination_folder: 'assets/img/cv'
-          user_email: 'max.powis@gmail.com'
-          user_name: 'maxpowis'
+          # user_email: 'max.powis@gmail.com'
+          user_name: 'marco-duinkerken'
           commit_msg: 'Update the cv.pdf thumbnails'
