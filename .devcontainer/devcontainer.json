@@ -10,7 +10,10 @@
     // Put VS Code settings here (optional)
   },
   "extensions": [
-    // List of VS Code extension IDs to install (optional)
+    "james-yu.latex-workshop",
+    "tecosaur.latex-utilities",
+    "cschleiden.vscode-github-actions",
+    "streetsidesoftware.code-spell-checker"
   ],
   "forwardPorts": [
     // List of ports to forward (optional)
