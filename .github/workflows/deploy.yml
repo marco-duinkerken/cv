@@ -70,5 +70,5 @@ jobs:
           destination-github-username: 'marco-duinkerken'
           destination-repository-name: 'marco-duinkerken.github.io'
           # user-email: max.powis@gmail.com
-          target-branch: master
+          target-branch: main
           commit-message: "Updates from cv release ${{ steps.cv_release.outputs.release }}"
