@@ -163,11 +163,14 @@
   \color{white}
 \fi
 
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}                                                                                                                                                              
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}  
+
 \begin{document}
 \par{
   
     \Huge \textsc{Marco Duinkerken}\par
-    \large \textsc{Freelancer}\par 
+    \large \textsc{Freelance Data \& Analytics Consultant}\par 
     \small \textsc{\displayage{1990-09-20}}\par  
   \par
 }
@@ -177,36 +180,63 @@
 \section{Contact}
 \begin{tabular}{r l}
   \textsc{\faLinkedin{} LinkedIn} &  \href{https://www.linkedin.com/in/marco-duinkerken/}{linkedin.com/in/marco-duinkerken}\\
-  \textsc{\faGithub{} GitHub} &  \href{https://github.com/marco-duinkerken}{github.com/marco-duinkerken}%
+  %\textsc{\faGithub{} GitHub} &  \href{https://github.com/marco-duinkerken}{github.com/marco-duinkerken}%
 \end{tabular}
 
 \section{Employment history}
-\begin{longtable}{p{3.3cm}|p{14.1cm}}
-  \joblogcurrent{Freelance Data \& Analytics Consultant}{Dewpoint}{Amsterdam, NL}{2020-08-19}{%
-  %
+\begin{longtable}{p{3.4cm}|p{14.1cm}}
+  \joblogcurrent{Freelance Data \& Analytics Consultant}{Dewpoint Advisory}{Amsterdam, NL}{2020-08-19}{%
+  As a Freelance Data \& Analytics Consultant, I support companies in structuring and leveraging their data to enhance decision-making and operational efficiency.
   }{}
 
   \joblog{Data \& Analytics Consultant}{Avanade}{Utrecht, NL}{2017-04-01}{2020-03-31}{%
-  %
+  Took various roles such as Data Engineer, Machine Learning Engineer and Data Analyst, leveraging solutions from the Microsoft ecosystem such as Azure, SQL Server, SSIS and Power BI. 
   }{}
 
-  \joblog{Working student}{Generali Verzekeringen}{Diemen, NL}{2014-05-01}{2017-03-31}{%
-  %
+  \joblog{Working Student}{Generali Verzekeringen}{Diemen, NL}{2014-05-01}{2017-03-31}{%
+  Supported the Business Information Management on various initiatives such as:%
+  \begin{itemize}
+    \item Implementing the COBIT IT Governance framework
+    \item Conducted analyses of architecture scenarios, bolstering IT Portfolio Management efforts
+    \item Formulated and instituted data policies, aligning with GDPR prerequisites
+    \item Identify and categorize types of personal data processed to prepare for GDPR
+  \end{itemize}
   }{}
 \end{longtable}
 
 \section{Education}
-\begin{longtable}{p{3.3cm}|p{14.1cm}}
-  \joblog{Master of Science}{University of Amsterdam}{Amsterdam, NL}{2015-09-01}{2017-06-30}{
+\begin{longtable}{p{3.4cm}|p{14.1cm}}
+  \joblog{Master of Science}{University of Amsterdam}{Amsterdam, NL}{2015-09-01}{2017-06-30}{%
+  Specialization in Business Information Systems and electives in Data Science
   }{}
 
-  \joblog{Bachelor of ICT}{Amsterdam University of Applied Sciences}{Amsterdam, NL}{2011-09-01}{2015-06-30}{
+  \joblog{Bachelor of ICT}{Amsterdam University of Applied Sciences}{Amsterdam, NL}{2011-09-01}{2015-06-30}{%
+  Specialization in IT Management
   }{}  
 \end{longtable}
 
+\section{Certifications}
+\begin{longtable}{R{3.4cm}|L{14.1cm}}
+  \textsc{Collibra}& Solution Architect\\
+  \textsc{DAMA International}& Certified Data Management Practitioner - Associate\\
+  \textsc{Google Cloud}& Cloud Digital Leader\\
+  \textsc{Microsoft}& Azure Solution Architect -- Azure Security Engineer -- Identity and Access Administrator\\
+  \textsc{}& Data Science Professional Program -- Power BI Data Analyst\\
+  \textsc{Prosci}& Change Management Practitioner\\  
+  \textsc{Scrum.org}& Professional Scrum Master I\\
+\end{longtable}
+
+\section{Languages}
+\begin{longtable}{R{3.4cm}|L{14.1cm}}
+  \textsc{Dutch}& Native proficiency\\
+  \textsc{English}& Professional working proficiency
+\end{longtable}
+
+\newpage
+
 \section{Professional experience}
-\begin{longtable}{p{3.3cm}|p{14.1cm}}
-  \joblog{Project manager}{International Financial Institution}{Luxembourg, LU}{2023-09-30}{2024-01-31}
+\begin{longtable}{p{3.4cm}|p{14.1cm}}
+  \joblog{Project Manager}{multilateral financial institution}{Luxembourg, LU}{2023-10-01}{2024-01-31}
   {Supporting Data Governance tool selection process:
   \begin{itemize}
     \item Ensured Steering Committee was consistently informed and engaged on the selection process
@@ -214,82 +244,127 @@
     \item Identified and articulated pain points, use cases, functional- and technical requirements
   \end{itemize}
   }
-  {\sotagtech{Data Catalog}}
+  {}
 
-  \joblog{Solution Architect}{SaaS Company}{Flemish region, BE}{2023-02-01}{2023-09-30}
-  {Transition a scale-up to a data centric way of working}
-  {\sotagarch{Data Platform Architecture} \sotagtech{Snowflake} \sotagtech{Microsoft Power BI}}
-
-  \joblog{Consultant}{Global FMCG}{Salzburg, AUT}{2023-09-30}{2024-01-31}
-  {
+  \joblog{Data Governance Expert}{multinational FMCG}{Salzburg, AUT}{2023-04-01}{2024-01-31}{%
+  Supporting Data Catalog tool selection process
     \begin{itemize}
-      \item Support Data Catalog tool selection process
-      \item Advise on roadmap for roll out of Data Catalog
+      \item Review, refine and compose RFP materials e.g.: (non)-functional requirements, data governance use cases, business use cases 
+      \item Evaluate responses and vendor presentations
+      \item Provide recommendations to stakeholders on next steps regarding federated data catalog solution architecture, data governance and change management
     \end{itemize}
   }
-  {\sotagtech{Data Catalog}}
+  {\sotagarch{Data Governance Architecture} \sotagtech{Microsoft Purview} \sotagtech{Collibra}}
 
-  \joblog{Consultant}{Manufacturer}{Paris, FR}{2022-11-30}{2023-09-30}
-  {Roll out Data Sharing Agreements}
+  \joblog{Solution Architect}{multinational SaaS company}{Flemish region, BE}{2023-02-01}{2023-09-30}{%
+  Transition a scale-up to a data centric way of working:%
+  \begin{itemize}
+    \item Advisory on the tooling composition of a modern data platform solution architecture
+    \item Collaborate with finance, sales and marketing to define data domains, business concepts and metrics
+    \item Implement the calculation and visualization of metrics for finance, sales and marketing
+  \end{itemize}
+  }
+  {\sotagarch{Data Platform Architecture} \sotagtech{Snowflake} \sotagtech{Microsoft Azure} \sotagtech{Microsoft Power BI}}
+
+  \joblog{Data Governance Expert}{multinational manufacturer}{Paris, FR}{2022-11-30}{2023-09-30}{%
+  Roll out of Data Sharing Agreements on a global scale:
+  \begin{itemize}
+    \item Advisory on the global adoption of Data Sharing Agreements and a practical implementation in Collibra Data Intelligence Cloud
+    \item Change management through managing communications with business partners and vendors
+  \end{itemize}
+  }
+  {\sotagarch{Data Sharing} \sotagarch{Attribute Based Access Control} \sotagtech{Collibra}}
+
+  \joblog{Data Governance Expert}{multinational telco}{London, GB}{2022-10-01}{2022-11-30}{%
+  Led a series of workshops for the initial setup and usage of Collibra Data Intelligence Cloud.
+  }
   {\sotagtech{Collibra}}
 
-  \joblog{Consultant}{Portuguese Telco}{Lisbon, PT}{2022-05-01}{2022-09-30}
-  {Roll out Data Mesh on Cloud environment}
-  {\sotagarch{Data Mesh} \sotagtech{Collibra} \sotagtech{Google BigQuery} \sotagtech{Google Cloud Platform} \sotagtech{Google Dataplex DQ} \sotagtech{Terraform} \sotagtech{Flowable}}
+  \joblog{Data Governance Expert}{Portugese telco}{Lisbon, PT}{2022-05-01}{2022-09-30}
+  {Roll out Data Mesh on Cloud environment:%
+  \begin{itemize}
+    \item Define and implement Data Governance capabilities and use-cases
+    \item Translate the definitions to a Collibra Data Intelligence Cloud-based solution design
+    \item Translate the definitions to a Product Backlog
+    \item Implement the use-cases in Google Cloud Platform and Collibra Data Intelligence Cloud
+    \item Create materials to on-board business units
+  \end{itemize}
+  }
+  {\sotagarch{Data Mesh} \sotagtech{Collibra} \sotagtech{Google BigQuery} \sotagtech{Google Dataplex DQ}}
 
-  \joblog{Consultant}{Utilities}{Arnhem, NL}{2022-05-01}{2022-07-31}
-  {Assess, adapt and accelerate Data Mesh Governance Implementation}
+  \joblog{Data Governance Expert}{utilities company}{Arnhem, NL}{2022-05-01}{2022-07-31}{%
+    Assess, adapt, and accelerate Data Mesh Governance Implementation:%
+    \begin{itemize}
+      \item Evaluation of sustainability of the Asset Model to support defined use cases, ensuring coherence with tools, processes, and the Operating Model
+      \item Configured use cases by identifying essential components for Data Domain adoption, facilitated efficient metadata exchange through integrations and trained and coached the data office
+      \item Assure operating model supports Conceptual Information Model, Data Privacy, Data Classification, a more robust Data Access authorization process, Data Retention policies and standards, and managing external data in the solution
+    \end{itemize}
+  }
   {\sotagarch{Data Mesh} \sotagtech{Collibra}}
 
-  \joblog{Consultant}{Global Telco}{Paris, FR}{2021-06-01}{2022-07-31}
-  {Set up Data Governance as a Managed Service}
-  {\sotagtech{Collibra} \sotagtech{Google Cloud Platform}}
-    
-  \joblog{Consultant}{Global Telco}{Düsseldorf, DE}{2021-06-01}{2022-02-28}
-  {Roll out Data Governance Office}
-  {\sotagarch{Data Governance Architecture}}
-
-  \joblog{Consultant}{Belgian Telco}{Brussels, BE}{2020-08-30}{2021-06-30}
-  {Roll out Data Governance capabilities on Cloud}
-  {\sotagtech{Collibra} \sotagtech{REST API} \sotagtech{Microsoft Azure} \sotagtech{Microsoft Purview}}
-
-  \joblog{Consultant}{Utilities}{Arnhem, NL}{2019-02-01}{2020-02-28}
-  {}
-  {\sotagarch{Data Quality}}
-
-  \joblog{Consultant}{Manufacturer}{Gothenburg, SE}{2018-04-01}{2019-01-31}
-  {}
-  {\sotagtech{IOT}}
-
-  \joblog{Consultant}{Brewery}{Zoeterwoude, NL}{2018-02-01}{2018-03-31}
-  {}
-  {\sotagtech{Deep Learning}}
-
-  \joblog{Consultant}{Brewery}{Zoeterwoude, NL}{2017-09-01}{2018-01-31}
-  {}
-  {\sotagtech{Data Migration}}
-
-  \joblog{Consultant}{Brewery}{Zoeterwoude, NL}{2017-04-01}{2017-08-31}{%
-    Predict the success of marketing campaigns. The deliverable was a two-class boosted decision tree machine-learning model that could predict which of the client’s customers would purchase a product presented in a marketing campaign. The models used the client’s CRM-data coming from Dynamics 365 (on-premises) as input.%
+  \joblog{Data Governance Expert}{multinational telco}{Paris, FR}{2021-06-01}{2022-07-31}{%
+  Set up Data Governance as a Managed Service in a Telecommunication company on a global scale:%
+  \begin{itemize}
+    \item Define Data Governance use-cases to offer as managed services to business units, translate the definitions to a Collibra Data Intelligence Cloud-based solution design, translate the definitions to a Product Backlog, implement the use-cases in Collibra Data Intelligence Cloud-based and create materials to on-board business units.
+    \item Implement a solution that streamlines the control specification for and access requests to data objects on Google Cloud Platform, leveraging Data Classification- and Data Retention frameworks to adapt workflows (outputs) based on data object characteristics.
+    \item Advisory and execution of the migration from the Data Galaxy data catalog to Collibra Data Intelligence Cloud data catalog for one of the client’s local operating companies.
+  \end{itemize}
   }
-  {\sotagtech{Microsoft Azure} \sotagtech{Azure Machine Learning Studio} \sotagtech{Azure SQL Database} \sotagtech{Microsoft Power BI} \sotagtech{R Tools for Visual Studio} \sotagtech{SQL} \sotagtech{Python}}
+  {\sotagtech{Collibra} \sotagtech{Google BigQuery}}
+    
+  \joblog{Data Governance Expert}{multinational telco}{Düsseldorf, DE}{2021-06-01}{2022-02-28}
+  {Roll out a Data Governance Office for the German branch of a multinational telecommunications company:%
+  \begin{itemize}
+    \item Set up an Agile-based Data Governance Product Target Operating Model using a roadmap driven by an ‘Objectives and Key Results’-framework to develop capabilities using a Data Mesh approach with value-based prioritization using strategic, organizational, business, functional and technical dimensions.
+    \item Embed Data Domain-driven Ownership and Data Classification to accelerate Data Governance Operationalization and to prioritize Data Domains for on-boarding based on their risk and/or value.
+  \end{itemize}
+  }
+  {\sotagarch{Data Governance}}
+
+  \joblog{Data Governance Expert}{telco}{Brussels, BE}{2020-08-30}{2021-06-30}
+  {Roll out cloud-based Data Governance capabilities by:
+  \begin{itemize}
+    \item Leveraging native features of both Microsoft Azure and Collibra Data Intelligence Cloud
+    \item Building a custom integration between Microsoft Purview (data catalog) and Collibra Data Intelligence Cloud
+    \item Implementing a solution that streamlines the processes of responsibility assignment, data classification, control specification, control monitoring and access requests for data objects on Azure, leveraging a Data Classification framework to adapt workflows based on data object characteristics.
+  \end{itemize}
+  }
+  {\sotagarch{Data Governance} \sotagtech{Microsoft Purview} \sotagtech{REST API} \sotagtech{Collibra} \sotagtech{Azure SQL Database} \sotagtech{Azure Data Lake Storage} \sotagtech{Azure Synapse}}
+
+  \joblog{Data Quality Consultant}{utilities company}{Arnhem, NL}{2019-02-01}{2020-02-28}
+  {Built a new multidisciplinary team that focusses on monitoring data quality and delegating data quality improvements. My responsibilities included:
+  \begin{itemize}
+    \item Define a data quality monitoring innovation roadmap for asset management 
+    \item Implement custom built data quality monitoring solutions
+    \item Advise on data governance practices to support the improvement of data quality for asset management
+  \end{itemize}
+    }
+  {\sotagarch{Data Governance} \sotagarch{Data Quality Management} \sotagtech{Shiny (R)} \sotagtech{Oracle DB}}
+
+  \joblog{Data Engineer}{manufacturer}{Gothenburg, SE}{2018-04-01}{2019-01-31}
+  {Built a cloud-based IoT data platform for an hygiene and health company on a global scale. \\ 
+  Activities included:%
+  \begin{itemize}
+    \item Build an analytics-architecture for a cloud-based data platform processing IoT-data
+    \item Facilitate and improve the vendor selection process to test a service in development
+    \item Develop a new business model based on possibilities provided by PaaS-services
+    \item Advise on value creation from IoT-data by taking advantage of PaaS- and SaaS-services
+  \end{itemize}
+  }
+  {\sotagarch{Internet Of Things} \sotagarch{Data Platform} \sotagtech{Azure IoT Hub} \sotagtech{Azure Event Hub} \sotagtech{Azure Digital Twin} \sotagtech{Azure Data Lake Storage} \sotagtech{Azure Data Factory} \sotagtech{Azure SQL Database} \sotagtech{Azure Storage} \sotagtech{Azure DevOps Services}  \sotagtech{Azure Databricks} \sotagtech{Microsoft Power BI}}
+
+  \joblog{Machine Learning Engineer}{FMCG}{Zoeterwoude, NL}{2018-02-01}{2018-03-31}
+  {Built a cloud-based deep learning image recognition solution that calculates retail KPIs ‘share-of-shelf’ and ‘planogram compliance’ based on pictures taken by account managers in stores.}
+  {\sotagarch{Deep Learning} \sotagarch{Object Recognition} \sotagtech{TensorFlow} \sotagtech{Azure Deep Learning Virtual Machine} \sotagtech{Azure Storage} \sotagtech{Azure Data Factory} \sotagtech{Azure SQL Database} \sotagtech{Microsoft Power BI}}
+
+  \joblog{Data Engineer}{FMCG}{Zoeterwoude, NL}{2017-09-01}{2018-01-31}
+  {Prepared and executed the data migration of a CRM solution from on-premises infrastructure to the public cloud}
+  {\sotagarch{Data Migration} \sotagtech{Microsoft Dynamics CRM} \sotagtech{Microsoft Dynamics 365} \sotagtech{Kingsway Soft} \sotagtech{Microsoft SQL Server} \sotagtech{SQL Server Integration Services} \sotagtech{Microsoft Power BI}}
+
+  \joblog{Machine Learning Engineer}{FMCG}{Zoeterwoude, NL}{2017-04-01}{2017-08-31}
+  {Built a cloud-based machine learning solution that predicts the success of marketing campaigns and reduces campaign costs.}
+  {\sotagtech{Azure SQL Database} \sotagtech{Azure Machine Learning Studio}  \sotagtech{Microsoft Power BI}%
+  }
 \end{longtable}
-
-\section{Certifications}
-\begin{tabular}{r|l}
-  \textsc{Collibra}& Solution Architect\\
-  \textsc{DAMA International}& Certified Data Management Practitioner - Associate\\
-  \textsc{Google Cloud}& Cloud Digital Leader\\
-  \textsc{Microsoft}& Azure Solution Architect -- Azure Security Engineer -- Identity and Access Management Administrator\\
-  \textsc{}& Data Science Professional Program -- Power BI Data Analyst\\
-  \textsc{Prosci}& Change Management Practitioner\\  
-  \textsc{Scrum.org}& Professional Scrum Master I\\
-\end{tabular}
-
-\section{Languages}
-\begin{tabular}{r|l}
-  \textsc{Dutch}& Native proficiency\\
-  \textsc{English}& Professional working proficiency
-\end{tabular}
 
 \end{document}
